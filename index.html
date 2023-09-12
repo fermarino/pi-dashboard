@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard ENADE/INEP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#"><i class="material-icons">home</i> Início</a></li>
+                <li><a href="#"><i class="material-icons">public</i> Regiões</a></li>
+                <li><a href="#"><i class="material-icons">school</i> Instituições</a></li>
+                <li><a href="#"><i class="material-icons">insert_chart</i> Dados Gerais</a></li>
+            </ul>
+            <div id="devs">
+                <p>Desenvolvido por:</p>
+                <p>Alessandra Mendes, Fernando Marino, Giovana Salgado, Hannah Marques, Sol de Lótus</p>
+            </div>
+        </nav>
+
+        <div class="container">
+            <header>
+                <h1>Dashboard ENADE/INEP</h1>
+            </header>
+            <div id="chart_div"></div>
+            <div class="chart-container">
+                <div class="chart">
+                    <canvas id="barChart"></canvas>
+                </div>
+                <div class="chart">
+                    <canvas id="barChartStacked"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
